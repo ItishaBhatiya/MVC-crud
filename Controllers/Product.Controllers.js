@@ -1,3 +1,5 @@
+const Product = require("../Models/model");
+
 const CreateProduct = async (req, res) => {
   try {
     let product = await Product.create(req.body);

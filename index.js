@@ -6,10 +6,6 @@ const app = express();
 app.use(express.json());
 require("dotenv").config();
 
-// app.get("/",(req,res)=>{
-//     res.send("welcome");
-// })
-
 app.use("/Products",ProductRoute)
 
 const PORT = process.env.PORT || 4050;
